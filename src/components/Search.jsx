@@ -1,6 +1,8 @@
-import React from 'react'
+import React from "react";
 
-const Search = ({ searchTerm, setSearchTerm }) => {
+ 
+// eslint-disable-next-line react/prop-types
+const Search = ({searchTerm, setsearchTerm}) => {
   return (
     <div className="search">
       <div>
@@ -10,10 +12,11 @@ const Search = ({ searchTerm, setSearchTerm }) => {
           type="text"
           placeholder="Search through thousands of movies"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => setsearchTerm(e.target.value)}
         />
       </div>
     </div>
-  )
-}
-export default Search
+  );
+};
+
+export default Search;
